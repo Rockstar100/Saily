@@ -1,0 +1,78 @@
+<component-navigation-bar />
+<section>
+    <div class="container mx-auto py-8">
+       <div class="col-md-4 text-center text-md-start">
+          <h2 class="h1">All destinations</h2>
+          <p class="pb-3 pb-sm-4">
+           Find the best data plans in over 150 countries — and enjoy easy and safe internet access wherever you go.
+  
+  
+          </p>
+          
+         
+        </div>
+    <div class="relative z-20">
+    <div class="mb-5">
+      <div class="col-span-12 lg:col-span-10">
+        <div class="my-2 relative">
+          <div
+            class="search-bar-container flex items-center pl-4 pr-2 py-2 md:pl-8 md:pr-5 md:py-4 transition-colors"
+          >
+            <svg
+              class="location-icon"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="location-dot"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+            >
+              <path
+                fill="currentColor"
+                d="M336 192c0-79.5-64.5-144-144-144S48 112.5 48 192c0 16.3 7.7 42 24.7 75.4c16.4 32.2 38.8 66.4 62.1 98.3c20.3 27.9 40.7 53.3 57.2 73.1c16.5-19.8 36.9-45.2 57.2-73.1c23.2-31.9 45.6-66.2 62.1-98.3C328.3 234 336 208.3 336 192zm48 0c0 83.1-105.6 219-160.2 283.6C204.8 498.1 192 512 192 512s-12.8-13.9-31.8-36.4C105.6 411 0 275.1 0 192C0 86 86 0 192 0S384 86 384 192zm-160 0a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm-112 0a80 80 0 1 1 160 0 80 80 0 1 1 -160 0z"
+              ></path>
+            </svg>
+            <input
+              placeholder="Enter country"
+              autocomplete="off"
+              class="outline-none flex-1 px-2 w-full text-md"
+              name="search-input"
+            />
+            <div class="search-button-container flex items-center justify-center">
+              <svg
+                class="search-icon"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="magnifying-glass"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M368 208A160 160 0 1 0 48 208a160 160 0 1 0 320 0zM337.1 371.1C301.7 399.2 256.8 416 208 416C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208c0 48.8-16.8 93.7-44.9 129.1l124 124 17 17L478.1 512l-17-17-124-124z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid">
+        <div *ngFor="let country of countries" class="col-span-1 mb-4">
+          <div class="card flex">
+            <div class="country-info">
+              <img [src]="country.flag" alt="{{country.name}}">
+              <h4 class="country-name">{{country.name}}</h4>
+            </div>
+            <div class="redirect-icon">
+              <i class="fa fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <app-footer />
+  

@@ -1,0 +1,63 @@
+<section class="overflow-hidden">
+  <div class="pb-sm-3 mb-2 mb-md-3 mb-lg-4 mb-xxl-5">
+    @for (item of allPortfolioList; track item.id; let i = $index) {
+      <article
+        class="row align-items-center card-hover pb-5 mb-md-2 mb-lg-3 mb-xl-4"
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-offset="280"
+      >
+        <!-- Even index: Image first, Text second -->
+        @if (i % 2 != 0) {
+          <div class="col-md-7 mb-4 mb-md-0 offset-xxl-1">
+           
+              <img class="rounded-5" [src]="item.image" width="700" alt="Image" />
+        
+          </div>
+          <div
+            class="col-md-5 col-xl-4"
+            data-aos="fade-up"
+            data-aos-duration="850"
+            data-aos-offset="180"
+            data-disable-parallax-down="md"
+          >
+            <div class="ms-md-4 ms-lg-5 ms-xxl-0" style="max-width: 330px">
+              <div class="text-body-secondary mb-2">{{ item.category }}</div>
+              <h2 class="mb-lg-4">
+                <a routerLink="/portfolio/single-1">{{ item.title }}</a>
+              </h2>
+              <p class="mb-0 mb-md-1 mb-lg-3">
+                {{ item.description }}
+              </p>
+              
+            </div>
+          </div>
+        <!-- Odd index: Text first, Image second -->
+        } @else {
+          <div
+            class="col-md-5 col-xl-4 offset-xxl-1"
+            data-aos="fade-up"
+            data-aos-duration="850"
+            data-aos-offset="180"
+            data-disable-parallax-down="md"
+          >
+            <div class="ms-md-4 ms-lg-5 ms-xxl-0" style="max-width: 330px">
+              <div class="text-body-secondary mb-2">{{ item.category }}</div>
+              <h2 class="mb-lg-4">
+                <a routerLink="/portfolio/single-1">{{ item.title }}</a>
+              </h2>
+              <p class="mb-0 mb-md-1 mb-lg-3">
+                {{ item.description }}
+              </p>
+             
+            </div>
+          </div>
+          <div class="col-md-7 mb-4 mb-md-0">
+              <img class="rounded-5" [src]="item.image" width="700" alt="Image" />
+            
+          </div>
+        }
+      </article>
+    }
+  </div>
+</section>
