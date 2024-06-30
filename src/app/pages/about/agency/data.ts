@@ -37,9 +37,9 @@ export const portfolioList: PortfolioType[] = [
     id: 1,
     image: 'https://saily.com/_next/image/?url=https%3A%2F%2Fsb.nordcdn.com%2Fm%2F4d4368196ceb08e7%2Foriginal%2Fplane-sky-phone-app.png&w=750&q=75',
     category: '',
-    title: 'What is Saily?',
+    title: 'What is EzySim?',
     description:
-      'Saily is a global eSIM service for travelers who want to stay connected on their trips. It offers hundreds of flexible travel data plans in over 150 countries, quick setup and 24/7 chat support. Get your travel data sorted with Saily — and enjoy smooth, safe, and reliable internet access while you’re away.',
+      'EzySim is a global eSIM service for travelers who want to stay connected on their trips. It offers hundreds of flexible travel data plans in over 150 countries, quick setup and 24/7 chat support. Get your travel data sorted with EzySim — and enjoy smooth, safe, and reliable internet access while you’re away.',
   },
   {
     id: 2,
@@ -47,7 +47,7 @@ export const portfolioList: PortfolioType[] = [
     category: ' ',
     title: 'Created by Nord Security',
     description:
-      'Saily was created by Nord Security, the company behind one of the world’s most popular digital privacy tools, NordVPN. Believe it or not, eSIMs aren’t that different from VPNs. Both are designed to give people a reliable connection, especially away from home. So, while a VPN protects your privacy on different networks, an eSIM gives you a secure and reliable internet connection when you travel.' },
+      'EzySim was created by Nord Security, the company behind one of the world’s most popular digital privacy tools, NordVPN. Believe it or not, eSIMs aren’t that different from VPNs. Both are designed to give people a reliable connection, especially away from home. So, while a VPN protects your privacy on different networks, an eSIM gives you a secure and reliable internet connection when you travel.' },
   
 ]
 
